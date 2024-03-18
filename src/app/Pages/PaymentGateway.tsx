@@ -2,7 +2,6 @@
 
 import * as React from "react";
 import CssBaseline from "@mui/material/CssBaseline";
-import Box from "@mui/material/Box";
 import { Typography } from "@mui/material";
 import Container from "@mui/material/Container";
 import PayGwButton from "../components/PayGwButton";
@@ -34,7 +33,31 @@ export default function PaymentGateway() {
                     }}
                 >
                     <CssBaseline />
-                    <PayGwButton gateWay={payGateways.WOMPI} />
+                    <div className="flex justify-center items-center">
+                        <Typography
+                            component={"h1"}
+                            color={"black"}
+                            fontSize={38}
+                        >
+                            Pasarela de pago
+                        </Typography>
+                    </div>
+
+                    <Container
+                        sx={{
+                            display: "flex",
+                            flexWrap: "wrap",
+                            justifyContent: "space-around",
+                            alignItems: "center",
+                        }}
+                    >
+                        <PayGwButton gateWay={payGateways.WOMPI} />
+                        <PayGwButton gateWay={payGateways.WOMPI} />
+                        <PayGwButton gateWay={payGateways.WOMPI} />
+                        <PayGwButton gateWay={payGateways.WOMPI} />
+                        <PayGwButton gateWay={payGateways.WOMPI} />
+                        <PayGwButton gateWay={payGateways.WOMPI} />
+                    </Container>
                 </Container>
             </div>
         </div>

@@ -3,5 +3,5 @@ import PayInfo from "./Pages/PayInfo";
 import PaymentGateway from "./Pages/PaymentGateway";
 
 export default function Home() {
-    return <PaymentGateway />;
+    return <PayProcess />;
 }
