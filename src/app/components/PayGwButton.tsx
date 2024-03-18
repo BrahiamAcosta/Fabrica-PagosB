@@ -16,10 +16,9 @@ export const PayGwButton = (gateway: btnProps) => {
         }
     };
     const url = getUrl(gateway.gateWay);
-    console.log(url);
 
     return (
-        <button className="flex justify-center items-center relative overflow-hidden cursor-pointer border-[none]">
+        <button className="flex justify-center items-center relative overflow-hidden cursor-pointer border rounded-[5px] border-solid border-[black]">
             <Image
                 src={url}
                 width={300}
